@@ -1,0 +1,104 @@
+* {
+  font-family: sans-serif;
+  color: white;
+}
+
+body {
+  background-color: grey;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#main{
+  background-color: black;
+  height: 100vh;
+  width: 80vw;
+  margin: 0;
+  margin-left: 10vw;
+  padding: 0;
+}
+
+#heading{
+  height: 100px;
+}
+
+header {
+  font-size: 80px;
+  margin: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+#pics {
+  height: 60vh;
+}
+
+.picture {
+  background-color: #21252b;
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: calc(60vh - 20px);
+  width: calc(40vw - 20px);
+  margin: 10px;
+}
+
+
+img {
+  object-fit: contain;
+  /* You can also use cover instead of fill but they are different */
+}
+
+.empty {
+  opacity: 0;
+}
+
+.heightLock {
+  height: calc(60vh - 20px);
+}
+
+.widthLock {
+  width: calc(40vw - 20px);
+  align-self: center;
+}
+
+button,
+.button {
+  display: flex;
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #FF7F50;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type=file]{
+  position: absolute;
+  z-index: -1;
+  color: #000;
+  height: 0;
+}
+
+.slider-container {
+  display: inline-flex;
+}
+
+.slider {
+  margin-right: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Geometrize</title>
+  </head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Quest Log</title>
+  <body onload="load()">
+    <div id="main">
+      <div id="heading">
+        <header>
+          Geometrize
+        </header>
+      </div>
+      <div id="pics">
+        <div id="pic1" class="picture">
+          <div class="container" id="imageParent">
+            <img id="myImg" class="empty" class="heightLock" class="widthLock" src="#">
+          </div>
+        </div>
+        <div id="pic2" class="picture">
+          <div class="container" id="canvasParent">
+            <canvas id="canvas" width="37.5wh" height="55vh" onclick="draw()"></canvas>
+          </div>
+        </div>
+      </div>
+      <div id="buttons">
+        <label class="button" for="insert">Upload Image</label>
+        <input id="insert" type='file' />
+        <button type="button" name="button" onclick="execute()">Execute</button>
+        <button type="button" name="button" onclick="clear1()">Clear</button>
+        <div class="slider-container">
+          <div class="slider">
+            <p id="displayRadius">Blur radius: </p>
+            <input type="range" id="blurRad" min="0" max="10" step="1" value="5">
+          </div>
+          <div class="slider">
+            <p id="displaySigma">Blur sigma: </p>
+            <input type="range" id="blurSig" min="0" max="10" step="0.1" value="5">
+          </div>
+          <div class="slider">
+            <p id="displayDensity">Shape density: </p>
+            <input type="range" id="pixDen" min="0" max="100" step="1" value="50">
+          </div>
+          <div class="slider">
+            <p id="displaySize">Shape size: </p>
+            <input type="range" id="pixSiz" min="0" max="10" step="1" value="5">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
